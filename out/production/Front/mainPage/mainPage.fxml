@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPage.MainPage">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="400.0" prefWidth="609.0" style="-fx-background-color: #FFFFE0;">
+         <children>
+            <TextField fx:id="count" alignment="CENTER_RIGHT" layoutX="177.0" layoutY="170.0" onAction="#countAction" prefHeight="60.0" prefWidth="256.0" promptText="0" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TextField>
+            <Text layoutX="117.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введи начальный остаток средств">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

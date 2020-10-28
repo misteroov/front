@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="459.0" prefWidth="799.0" style="-fx-background-color: #FFFFE0;">
+         <children>
+            <Text layoutX="200.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Домашний Бухгалтер" textAlignment="CENTER" wrappingWidth="500.0">
+               <font>
+                  <Font name="Calibri Italic" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="595.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Остаток средств">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="mainComboBox" layoutX="32.0" layoutY="120.0" onAction="#select" prefWidth="150.0" promptText="Расходы" />
+            <Label fx:id="textShow" layoutX="306.0" layoutY="254.0" text="Расходы/Доходы">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="mainComboBoxDox" layoutX="32.0" layoutY="205.0" onAction="#selectadd" prefWidth="150.0" promptText="Доходы" />
+            <Text layoutX="73.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Расходы">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="68.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Доходы">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="countrasx" layoutX="200.0" layoutY="120.0" onAction="#rasxmin" onInputMethodTextChanged="#rasxmin" prefHeight="25.0" prefWidth="108.0" promptText="Руб" />
+            <TextField fx:id="countdox" layoutX="200.0" layoutY="205.0" onInputMethodTextChanged="#dox" prefHeight="25.0" prefWidth="108.0" promptText="Руб" />
+            <Button fx:id="setCountButton" layoutX="31.0" layoutY="396.0" mnemonicParsing="false" onAction="#eventCountButton" prefHeight="25.0" prefWidth="108.0" text="Задать остаток" />
+            <Text fx:id="countSUM" layoutX="649.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
