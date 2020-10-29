@@ -36,7 +36,7 @@ public class Controller {
 
     );
     String s="";
-    String xx = "HFcasdas";
+
 
 
     @FXML
@@ -94,6 +94,7 @@ s = mainComboBox.getSelectionModel().getSelectedItem().toString();
     private ComboBox mainComboBoxDox;
     @FXML
     void selectadd(ActionEvent event) {
+
         s = mainComboBoxDox.getSelectionModel().getSelectedItem().toString();
 
     }
